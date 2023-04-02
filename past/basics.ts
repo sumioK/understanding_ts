@@ -1,5 +1,5 @@
 {
-  function add(n1: number, n2: number, showResult: boolean, phrase: string){
+  function add(n1: number, n2: number, showResult: boolean, phrase: string):any{
     if(showResult){
       const result = n1 + n2
       console.log(phrase + result)
