@@ -1,33 +1,14 @@
-{
-  type Combinable = number | string
-  type conversionDescriptor = 'as-number'| 'as-text'
+let userInput: unknown;
+let userName: string;
 
-  function combine(
-    input1: number | Combinable, 
-    input2: number | Combinable, 
-    resultConversion: conversionDescriptor,
-    ){
-    let result;
-    if (typeof input1 === 'number' && typeof input2 === 'number' || 
-      resultConversion === 'as-number'){
-    result = +input1 + +input2;
-      return result
-    }else{
-      result = input1.toString() + input2.toString();
-      return result;
-    }
-    return result;
-  }
+userInput = 5;
+userInput = 'Max'
 
-  const combinedAges = combine(30, 26, 'as-number');
-  console.log(combinedAges)
-
-  const combinedStringAges = combine('30', '26', 'as-number');
-  console.log(combinedStringAges)
-
-  const combinedNames = combine('Max', 'Anna', 'as-text')
-  console.log(combinedNames)
-
-
-
+if(typeof userInput === 'string'){
+  userName = userInput;
 }
+
+function generageError(message: string, code:number):never{
+  throw { message: message, errorCode: code};
+}
+generageError('エラーが発生しました', 500)
