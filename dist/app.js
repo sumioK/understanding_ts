@@ -5,3 +5,4 @@
         console.log('Clicked!');
     });
 }
+//# sourceMappingURL=app.js.map
