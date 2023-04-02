@@ -1,18 +1,17 @@
 {
-    // const person:{
-    //   name: string;
-    //   age: number;
-    // } 
-    var person = {
-        name: 'yota',
-        age: 30,
-        hobbies: ['sports', 'Cooking'],
-    };
-    var favoriteActivities = void 0;
-    favoriteActivities = ['sprots'];
-    console.log(person.name);
-    for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-        var hobby = _a[_i];
-        console.log(hobby.toUpperCase());
+    function add(n1: number, n2: number, showResult: boolean, phrase: string){
+      if(showResult){
+        const result = n1 + n2
+        console.log(phrase + result)
+      }else{
+        return result
+      }
     }
-}
+  
+    const number1 = 5;
+    const number2 = 2.8;
+    const printResult = true;
+  const resultPhrase = 'Result: '
+  
+    const result = add(number1, number2, printResult, resultPhrase)
+  }
